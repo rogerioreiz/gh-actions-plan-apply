@@ -42,6 +42,12 @@ jobs:
       - name: Terraform Init
         id: init
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        env:
+          AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET_NAME }}
+          AWS_BUCKET_KEY_NAME: ${{ secrets.AWS_BUCKET_KEY_NAME }}
+>>>>>>> a6ae481 (Teste differente values)
 =======
         env:
           AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET_NAME }}
