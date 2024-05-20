@@ -26,7 +26,7 @@ jobs:
         run: terraform plan -no-color -out=tfplan.binary
 
       - name: Comment PR with Plan
-        uses: actions/github-script@v7
+        uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
