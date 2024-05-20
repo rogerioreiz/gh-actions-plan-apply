@@ -1,5 +1,5 @@
-resource "random_string" "random" {
-  length           = 17
-  special          = true
-  override_special = "/@£$"
+resource "aws_ssm_parameter" "foo" {
+  name  = "foo"
+  type  = "String"
+  value = "barr"
 }
