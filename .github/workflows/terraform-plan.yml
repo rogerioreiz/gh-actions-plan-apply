@@ -28,7 +28,7 @@ jobs:
       - name: Comment PR with Plan
         uses: actions/github-script@v6
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.MY_PERSONAL_SECRET_ON_GH }}
           script: |
             const fs = require('fs');
             const planOutput = fs.readFileSync('tfplan.binary', 'utf8');
